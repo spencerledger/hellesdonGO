@@ -27,14 +27,23 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        a {
+        .button {
+            display: inline-block;
             font-size: 18px;
-            color: #007BFF;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
             text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none; /* Ensures no underline */
         }
     </style>
 </head>
@@ -44,7 +53,7 @@
     <img src="https://cdn.spencers.zone/images/HellesdonGO.jpeg" alt="Hellesdon Fighters GO!" loading="lazy">
 
     <!-- Text Below Image -->
-    <p><a href="https://clicks.spencers.zone/GO!" target="_blank">Find more at their wiki</a></p>
+    <p><a href="https://clicks.spencers.zone/GO!" target="_blank" class="button">Find more at their wiki</a></p>
 
 </body>
 </html>
